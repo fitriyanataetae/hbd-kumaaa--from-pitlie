@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kumaa</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(to bottom,#4a0f1f,#5f1830,#732541);
+color:white;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:300;
+}
+
+.hero h2{
+font-size:90px;
+color:#ffb6c1;
+font-style:italic;
+}
+
+.hero h3{
+font-size:60px;
+font-weight:300;
+}
+
+.line{
+width:120px;
+height:2px;
+background:#ffb6c1;
+margin:20px auto;
+}
+
+.typing{
+font-size:24px;
+color:#ffd8e3;
+margin-top:10px;
+}
+
+.date{
+margin-top:20px;
+letter-spacing:3px;
+opacity:.8;
+}
+
+.gift-title{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.gift-sub{
+opacity:.8;
+margin-bottom:20px;
+}
+
+.bouquet-wrap{
+position:relative;
+width:320px;
+height:320px;
+margin:20px auto;
+}
+
+.flower-item{
+position:absolute;
+font-size:45px;
+cursor:pointer;
+transition:.3s;
+}
+
+.flower-item:hover{
+transform:scale(1.2);
+}
+
+.f1{left:130px;top:20px;}
+.f2{left:220px;top:80px;}
+.f3{left:40px;top:80px;}
+.f4{left:130px;top:120px;}
+.f5{left:40px;top:170px;}
+.f6{left:220px;top:170px;}
+
+.vase{
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+font-size:100px;
+}
+
+.message{
+margin-top:20px;
+background:rgba(255,255,255,.1);
+padding:15px;
+border-radius:15px;
+max-width:320px;
+}
+
+.letter{
+max-width:700px;
+line-height:1.8;
+font-size:20px;
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+text-align:left;
+}
+
+.polaroid{
+background:white;
+padding:12px;
+width:280px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.polaroid img{
+width:100%;
+border-radius:5px;
+}
+
+.polaroid p{
+color:#444;
+margin-top:10px;
+font-style:italic;
+}
+
+.floating{
+position:fixed;
+animation:fall linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes fall{
+from{
+transform:translateY(-100px);
+}
+to{
+transform:translateY(110vh);
+}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div>🌸 Your Special Day 🌸</div>
+
+<h1>Happy</h1>
+<h2>Birthday</h2>
+<h3>Kumaa</h3>
+
+<div class="line"></div>
+
+<div class="typing">
+The Most Special Person ✨
+</div>
+
+<div class="date">
+23 JUNE 2009 • THE MOST SPECIAL DAY
+</div>
+
+</section>
+
+<section>
+
+<div class="gift-title">💐 Digital Bouquet</div>
+
+<div class="gift-sub">
+Touch each flower to reveal its message
+</div>
+
+<div class="bouquet-wrap">
+
+<div class="flower-item f1"
+onclick="showMsg('Happy Birthday Kumaa')">🌸</div>
+
+<div class="flower-item f2"
+onclick="showMsg('Wishing you happiness every day ✨')">🌷</div>
+
+<div class="flower-item f3"
+onclick="showMsg('Wishing you good health always')">🌹</div>
+
+<div class="flower-item f4"
+onclick="showMsg('Semoga semua impianmu tercapai 🌻')">🌻</div>
+
+<div class="flower-item f5"
+onclick="showMsg('Thank you for existing 💌')">🌼</div>
+
+<div class="flower-item f6"
+onclick="showMsg('23 June 2009 🌙')">🌺</div>
+
+<div class="vase">🩷</div>
+
+</div>
+
+<div id="flowerMsg" class="message">
+Klik bunga di buket 🌸
+</div>
+
+</section>
+
+<section>
+
+<h1 style="margin-bottom:20px;">
+💌 Birthday Letter
+</h1>
+
+<div class="letter">
+
+Happy birthday to a genuinely good person who continues to inspire me in so many ways.
+
+<br><br>
+
+Continue to bring happiness to the people around you and never lose the genuine heart that makes you so special.
+
+<br><br>
+
+I hope you keep smiling, enjoying every little moment, and finding happiness in the simple things that make life beautiful.
+
+<br><br>
+
+Be happy always, my_ ❤️
+
+<br><br><br>
+
+<div style="text-align:right;">
+With all my love,<br>
+Pitli
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h1 style="margin-bottom:20px;">
+📸 A Special Memory
+</h1>
+
+<div style="
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+">
+
+<div class="polaroid">
+<img src="foto1.jpg">
+<p>Thank you for all the beautiful memories ❤️</p>
+</div>
+
+<div class="polaroid">
+<img src="foto2.jpeg">
+<p>Your smile makes every moment brighter ✨</p>
+</div>
+
+<div class="polaroid">
+<img src="foto3.jpg">
+<p>Every picture tells a special story 🌸</p>
+</div>
+
+<div class="polaroid">
+<img src="foto4.jpeg">
+<p>Wishing you endless happiness and love 💖</p>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<script>
+
+function showMsg(text){
+document.getElementById("flowerMsg").innerHTML=text;
+}
+
+for(let i=0;i<30;i++){
+
+let flower=document.createElement("div");
+
+flower.className="floating";
+
+flower.innerHTML=["🌸","🌺","🌷","💮"][Math.floor(Math.random()*4)];
+
+flower.style.left=Math.random()*100+"vw";
+
+flower.style.fontSize=(20+Math.random()*20)+"px";
+
+flower.style.animationDuration=(8+Math.random()*8)+"s";
+
+document.body.appendChild(flower);
+
+}
+
+</script>
+
+</body>
+</html>
